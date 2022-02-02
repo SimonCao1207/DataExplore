@@ -38,5 +38,4 @@ a y label ratio of 1:1 because we do not have knowledge of the true labels.
 Instead, we take a random subset of the (unlabeled) training data and
 crowdsource the labels, which preserves the original true label distribution.
 
-To adjust the quality of crowdsourced labels, one can compute worker-specific
-accuracies by grouping the answers by worker_id and filter out poor performers.
+To adjust the quality of crowdsourced labels, one can compute worker-specific accuracies by grouping the answers by worker_id and filter out poor performers.
