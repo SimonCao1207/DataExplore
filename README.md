@@ -11,7 +11,7 @@
 
 2 experiments:
 - Using PCA to reduce the dimensions required from 14 to 12.
-- Making use of the crowdsourcing data (by following the features selection used by crowdsourcing data) and try to construct a validation set.
+- Making use of the crowdsourcing data (by following the features selection used by crowdsourcing data) and try to construct a validation set based on that.
 
 
 
