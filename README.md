@@ -22,19 +22,24 @@
 
 ## Run experiments on FR-train
 
-- Run with Ground Truth data from COMPAS dataset
+- **Run with Ground Truth data from COMPAS dataset.**
 
-Accuracy : 0.654, Disparate Impact : 0.955
+    Accuracy : 0.654, Disparate Impact : 0.955 (worse ACC, better DI)
 
-- Run with ground truth data from Adult Cencus dataset (without clean validation set)
+- **Run with poison data from COMPAS dataset.**
 
-Accuracy : 0.822, Disparate Impact : 0.925
+    Accuracy : 0.736, Disparate Impact : 0.972 (better ACC, better DI))
 
-- Run with real data from Adult Cencus dataset (with crowdsouring validation set)
+- **Run with ground truth data from Adult Cencus dataset (without clean validation set)**
 
-Accuracy : 0.791, Disparate Impact : 0.838 
+    Accuracy : 0.822, Disparate Impact : 0.925 (better ACC, better DI)
 
+- **Run with real data from Adult Cencus dataset (with crowdsouring validation set)**
 
+    Accuracy : 0.791, Disparate Impact : 0.838 (worse ACC, worse DI)
+
+    *reason: maybe take the mean of all samples is not a great idea. Should have compute worker-specific accuracies by grouping the answers by worker_id and filter out poor performers.*
+    
 ## Reference
 - [fr-train](https://github.com/yuji-roh/fr-train.git)
 - [Propublica repo](https://github.com/propublica/compas-analysis)
