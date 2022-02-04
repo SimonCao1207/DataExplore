@@ -15,6 +15,12 @@
 
 ## Run experiments on FR-train
 
+![Result from paper](./img/result.png)
+
+- Run with real data from COMPAS dataset
+
+Accuracy : 0.654, Disparate Impact : 0.955
+
 - Run with real data from Adult Cencus dataset (without clean validation set)
 
 Accuracy : 0.822, Disparate Impact : 0.925
@@ -23,9 +29,6 @@ Accuracy : 0.822, Disparate Impact : 0.925
 
 Accuracy : 0.791, Disparate Impact : 0.838 
 
-- Run with real data from COMPAS dataset
-
-Accuracy : 0.654, Disparate Impact : 0.955
 
 
 
