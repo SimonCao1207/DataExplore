@@ -2,7 +2,7 @@
 
 ## COMPAS dataset
 
-- My effort is to preprocess and clean the data similar to the method of IBM's AI Fairness 360 including filtering missing data, dropping irrelevant columns, explore new informative features.
+- My effort is to preprocess and clean the data similar to the method of IBM's AI Fairness 360 (which is an open source toolkit that can help to examine, report, and mitigate discrimination and bias in machine learning models) including filtering missing data, dropping irrelevant columns, explore new informative features.
 
 - For generation of poisoned data, I poison about 10% of the training data by flipping the labels of examples that belong to a specific z attribute (for this experiment z = 1) so as to maximize the accuracy performance degradation
 
