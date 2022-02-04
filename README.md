@@ -18,8 +18,7 @@
 
 ![Result from paper](./img/result.png)
 
-*Table 8 in FR-Train paper Accuracy and fairness of FR-Train when using crowd-sourced labels versus ground truth labels for the validation set.
-The training data is poisoned as in Tables 2 and 3.*
+*Table 8 in FR-Train paper Accuracy and fairness of FR-Train when using crowd-sourced labels versus ground truth labels for the validation set.*
 
 ## Run experiments on FR-train
 
