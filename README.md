@@ -13,15 +13,21 @@
 - Using PCA to reduce the dimensions required from 14 to 12.
 - Making use of the crowdsourcing data (by following the features selection used by crowdsourcing data) and try to construct a validation set.
 
-## Run experiments on FR-train
+
+
 
 ![Result from paper](./img/result.png)
 
-- Run with real data from COMPAS dataset
+*Table 8 in FR-Train paper Accuracy and fairness of FR-Train when using crowd-sourced labels versus ground truth labels for the validation set.
+The training data is poisoned as in Tables 2 and 3.*
+
+## Run experiments on FR-train
+
+- Run with Ground Truth data from COMPAS dataset
 
 Accuracy : 0.654, Disparate Impact : 0.955
 
-- Run with real data from Adult Cencus dataset (without clean validation set)
+- Run with ground truth data from Adult Cencus dataset (without clean validation set)
 
 Accuracy : 0.822, Disparate Impact : 0.925
 
@@ -30,11 +36,10 @@ Accuracy : 0.822, Disparate Impact : 0.925
 Accuracy : 0.791, Disparate Impact : 0.838 
 
 
-
-
 ## Reference
 - [fr-train](https://github.com/yuji-roh/fr-train.git)
 - [Propublica repo](https://github.com/propublica/compas-analysis)
+- [FR-Train: A Mutual Information-Based Approach to Fair and Robust Training (Yuji Roh, Kangwook Lee, Steven Euijong Whang, Changho Suh)](https://arxiv.org/abs/2002.10234)
 
 
 
