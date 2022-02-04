@@ -12,8 +12,8 @@
 2 experiments:
 - Using PCA to reduce the dimensions required from 14 to 12.
 - Making use of the crowdsourcing data (by following the features selection used by crowdsourcing data) and try to construct a validation set based on that.
-
-
+    + drop features that are not in crowdsourcing data
+    + find similar rows in both crowdsourcing data and original data to separate train data and validation data.
 
 
 ![Result from paper](./img/result.png)
@@ -38,8 +38,8 @@
 
     Accuracy : 0.791, Disparate Impact : 0.838 (worse ACC, worse DI)
 
-    *reason: maybe take the mean of all samples is not a great idea. Should have compute worker-specific accuracies by grouping the answers by worker_id and filter out poor performers.*
-    
+    *reason: maybe take the mean of all samples is not a great idea. Should have computed worker-specific accuracies by grouping the answers by worker_id and filter out poor performers.*
+
 ## Reference
 - [fr-train](https://github.com/yuji-roh/fr-train.git)
 - [Propublica repo](https://github.com/propublica/compas-analysis)
